@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- try themes from: https://startbootstrap.com/-->
+     <!--<link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+     <link rel="stylesheet" type="text/css" href="theme3.css"> 
+    <!--<link rel="stylesheet" type="text/css" href="theme4.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!--my custom css-->
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+    .container{border: 2px dotted green;}
+    .row{border: 2px dotted red;}
+    .row [class*=' col-']{border: 5px dotted purple;}
+    </style>
+    
+</head>
+<body>
+
+
+<!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- hamburger button. do not touch! -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+      <a class="navbar-brand" href="http://stackup.sg">
+          <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+          <i class="fa fa-telegram"></i>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- THIS UL HANDLES OUR LINKS -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="page1.html">pg 1</a></li>
+        <li><a href="http://facebook.com">facebook2</a></li>
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <!--comment shortcut: ctrl+/ or cmd+/-->
+    <!--main container for entire page-->
+    <div class="container" style="margin-top: 60px">
+
+        <!--row1: jumbotron-->
+        <div class="row">
+
+            <!--full width col for all devices-->
+            <div class="col-xs-12 
+                        col-sm-12 
+                        col-md-12 
+                        col-lg-12">
+                        
+                <div class="jumbotron my-jumbotron-background animated bounce">
+                    <h1>Hello, world!</h1>
+                    <p>Hhhhhhhhhhhhhh</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" 
+                    role="button">Learn more</a></p>
+                </div>
+            <!--end of jumbotron-->
+            </div>
+            <!--end of col-->
+        </div>
+        <!--end of row1-->
+
+        <!--row2: thumbails-->
+        <div class="row">
+
+            <!--col1: first thumbnail-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+
+                <div class="thumbnail">
+                <img src="simpsons_640x360.jpg" alt="...">
+                        <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                </div>
+            </div>
+            <!--end of col1-->
+
+             <!--col2: 2nd thumbnail-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+
+                     <div class="thumbnail">
+                     <img src="simpsons_640x360.jpg" alt="...">
+                        <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                </div>
+            </div>
+            <!--end of col2-->
+
+             <!--col3: 3rd thumbnail-->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4">
+
+                         <div class="thumbnail">
+                        <img src="simpsons_640x360.jpg" alt="...">
+                        <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                </div> 
+            </div>
+            <!--end of col3-->
+
+        </div>
+        <!--end of row-->
+
+<hr>
+
+   <!--row3: video-->
+        <div class="row">
+
+            <!--full width col for all devices-->
+        <div class="col-xs-12 
+                    col-sm-12 
+                    col-md-12 
+                    col-lg-12">
+                
+                      
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/Jwgf3wmiA04?autoplay=1&loop=1&playlist=Jwgf3wmiA04&start=50&end=53"></iframe>
+                </div>
+
+        </div>
+        <!--end of row3-->
+
+
+    </div>
+    <!--end of container-->
+
+<!--row4: form and generic text-->
+<div class="row bg-danger my-padding-top">
+
+<!--style="padding-top: 110px">-->
+    <!--start of left col-->
+    <div class="col-xs-12
+                col-sm-6
+                col-md-6
+                col-lg-6">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                <form action="https://coderinyou-1332.appspot.com/submit" method="post">
+                    <div class="form-group">
+                        <label for="name-id">Name</label>
+                        <input  type="text"
+                                class="form-control"
+                                name="username"
+                                id="username-id"
+                                placeholder="your name here" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="email-id">Email</label>
+                    <input type="email"
+                            class="form-control"
+                            name="email"
+                            id="email-id"
+                            placeholder="your email here" required>
+                    </div>
+
+                    <label>gender</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" 
+                                    name="GENDER" 
+                                    value="male"> male
+                        </label>
+                    </div>
+
+                     <div class="radio">
+                        <label>
+                            <input type="radio" 
+                                    name="GENDER" 
+                                    value="female"> female
+                        </label>
+                    </div>
+
+
+                    <div>
+                    <input type="submit" class="btn btn-primary">
+                    </div>
+
+                </div>
+                </div>
+
+
+    </div>
+<!--end of left col-->
+
+<!--start of right col-->
+    <div class="col-xs-12
+                col-sm-6
+                col-md-6
+                col-lg-6
+                text-center">
+            <h1 class="bg-success" "text-primary">A question??</h1>
+            <hr>
+            <p> llllllllllllllllllllllllloveeeeeeeee
+            </p>
+
+            <!--<h1 class="text-primary"> Lorem ispsum dolor?</h1>
+            <hr>
+            <p> Lorem ipsum....</p>-->
+
+    </div>
+    <!--end of right col-->
+
+   </div>
+   <!--end of row-->
+
+<!--row5: contact details-->
+<div class="row">
+
+
+
+<!--emmet shortcut: .col-xs-12.col-sm-4*3...-->
+    <!--col1: table-->
+    <div class="col-xs-12
+                col-sm-4
+                col-md-4
+                col-lg-4"> 
+<h3 class="text-center">Pricing</h3>
+
+     <table class="table table-hover">
+         <tr class="success">
+             <th>Hamster</th>
+             <th>Price</th>
+         </tr>
+         <tr>
+             <td>Royal hamster</td>
+             <td>$500</td>
+         </tr>
+         <tr>
+             <td>Drone hamster</td>
+             <td>$50</td>
+         </tr>
+         <tr>
+             <td>Exotic Bird</td>
+             <td>$5000</td>
+         </tr>
+     </table>           
+                
+                
+    </div>
+                    <!--end col1-->
+
+     <!--col2: map-->
+    <div class="col-xs-12
+                col-sm-4
+                col-md-4
+                col-lg-4">
+
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe src="https://goo.gl/EAEkgo" class="responsive-embed"></iframe>
+            </div>        
+                
+                     
+    </div>
+<!--end col2-->
+
+     <!--col3: list group-->
+    <div class="col-xs-12
+                col-sm-4
+                col-md-4
+                col-lg-4">
+
+        <h3 class="text-center">CHECK ME OUT</h3>
+
+      <div class="list-group">
+            <a class="list-group-item list-group-item-success" href="#" ><i class="fa fa-home fa-fw"></i>&nbsp;&nbsp;&nbsp; Telephone</a>
+            <a class="list-group-item" href="#"><i class="fa fa-book fa-fw"></i>&nbsp; EXAMPLE</a>
+            <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw"></i>&nbsp; Applications</a>
+            <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a>
+     </div>          
+                
+                
+                
+    </div>
+    <!--end col3-->
+
+</div>
+<!--end row5-->
+
+<!--row6: social media-->
+<div>
+        <ul class="list-inline text-center">
+            <li>
+                <a href="http://facebook.com" target="_blank">
+                <i class="fa fa-facebook fa-3x"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://instagram.com" target="_blank">
+                <i class="fa fa-instagram fa-3x"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://twitter.com" target="_blank">
+                <i class="fa fa-twitter fa-3x"></i>
+                </a>
+
+            </li>
+            
+
+             <li>
+                <a href="http://snapchat.com" target="_blank">
+                <i class="fa fa-snapchat fa-3x"></i>
+                </a>
+
+            </li>
+            </ul>
+</div>
+<!--end row6-->
+
+</div>
+<!--end of container-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+</body>
+</html>

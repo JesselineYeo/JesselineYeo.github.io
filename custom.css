@@ -1,0 +1,16 @@
+.my-jumbotron-background{
+    background-image: url("simpsons_640x360.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.my-padding-top{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.my-hover{
+    width: 100%;
+    transition: width 2s;
+}
